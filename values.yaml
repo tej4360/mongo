@@ -4,8 +4,8 @@
 
 replicaCount: 1
 component: mongo
-#version1: 2
-#version2: 0
+version1:
+version2:
 containerport: 80
 svcport: 80
 target: 80
