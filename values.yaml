@@ -4,8 +4,7 @@
 
 replicaCount: 1
 component: mongo
-version1:
-version2:
+image: mongo
 containerport: 80
 svcport: 80
 target: 80
