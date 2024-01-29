@@ -5,8 +5,8 @@
 replicaCount: 1
 component: mongo
 image: mongo
-containerport: 80
-svcport: 80
-target: 80
+containerport: 27017
+svcport: 27017
+target: 27017
 service: ClusterIP
 nodeport: false
