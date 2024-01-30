@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 # Install MongoDB client tools
 RUN apt-get update && \
     apt-get install -y mongodb-org-tools
+RUN ln -s /usr/bin/mongosh /usr/bin/mongo
 
 # Copy the MongoDB initialization script to the working directory
 COPY init-mongo.sh .
