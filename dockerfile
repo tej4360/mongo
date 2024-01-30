@@ -1,4 +1,3 @@
-# Use an official MongoDB image as a base
 FROM          mongo:latest
 
 # Set the working directory in the container
