@@ -14,8 +14,8 @@ COPY init-mongo.sh .
 # Grant execution permission to the script
 RUN chmod +x init-mongo.sh
 
-# Copy the MongoDB schema initialization script
-COPY schema/catalogue.js /usr/src/app/schema/
+# Copy initialization script into the container
+COPY init-mongo.sh /docker-entrypoint-initdb.d/
 
 # Run the MongoDB initialization script during the build
 RUN ./init-mongo.sh
